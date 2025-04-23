@@ -31,7 +31,7 @@ export default function Projects() {
         }, 300)
     }
     return (
-        <div className="flex flex-col items-center justify-center h-auto w-[95%] max-w-[1024px] md:w-[80%] bg-white/40 dark:bg-black/60 rounded-lg pb-8">
+        <div className="max-w-[1280px] flex flex-col items-center justify-center h-auto w-[95%] md:w-[80%] lg:w-[1024px] bg-white/40 dark:bg-black/60 rounded-lg pb-8">
             <h2 className="text-black dark:text-white uppercase text-xl md:text-3xl my-4 tracking-widest">Projects and interests</h2>
             <div id="projects" className="grid md:grid-cols-3 gap-4 w-full p-4 pb-8">
                 <div id="project1"
