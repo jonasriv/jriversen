@@ -21,7 +21,7 @@ export default function Home() {
     >
       <Header/>
       <div 
-        id="main-content" className="w-full max-w-1024 h-auto min-h-200 flex flex-col justify-start items-center text-black mt-8 md:mt-24 pt-8 gap-8 overflow-y-scroll pb-12 no-scrollbar"
+        id="main-content" className="w-full h-auto min-h-200 flex flex-col justify-start items-center text-black mt-8 md:mt-24 pt-8 gap-8 overflow-y-scroll pb-12 no-scrollbar"
         
       >
         <About/>

@@ -5,7 +5,7 @@ import { CircleSmall } from 'lucide-react';
 export default function About () {
 
     return (
-        <div className="flex flex-col md:flex-row items-center justify-center mx-4 gap-12 w-full h-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center mx-4 gap-12 w-full max-w-[1024px] h-auto">
             <div id="about" className='bg-white/40 dark:bg-black/60 text-black dark:text-white  w-[95%] md:w-[80%] rounded-xl mx-4 p-4 flex flex-col md:flex-row h-auto'>
                 <article className='gap-4 w-full'>
                     <h2 className='text-black dark:text-white uppercase text-xl md:text-3xl my-4 tracking-widest text-center'>Jonas Risløw Iversen</h2>
