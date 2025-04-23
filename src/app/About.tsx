@@ -11,7 +11,7 @@ export default function About () {
                     <h2 className='text-black dark:text-white uppercase text-xl md:text-3xl my-4 tracking-widest text-center'>Jonas Risløw Iversen</h2>
                     <div className='w-full flex flex-row md:flex-row justify-center items-start gap-4'>
                         <p className="text-lg max-w-[800px]">
-                            I am a dedicated fullstack developer within modern web development, with Next / React / TypeScript / TailwindCSS as my primary stack. In addition, I am professionally trained in machine learning technologies and neural networks. I am currently looking for ways to incorporate modern web development with various AI technologies such as Tensorflow.js
+                            I am a dedicated fullstack developer within modern web development, with Next / React / TypeScript / TailwindCSS as my primary stack. In addition, I am professionally trained in machine learning technologies and neural networks. I am currently exploring ways to incorporate modern web development with various AI technologies such as Tensorflow.js
                         </p>
                     </div>
                     
