@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 import { ThemeProvider } from './theme-provider'
 import React, { ReactNode } from 'react';
 export const metadata: Metadata = {
-  title: 'My App',
-  description: 'My App Description',
+  title: 'J.R.Iversen',
+  description: '',
 }
 
 interface RootLayoutProps {
