@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div 
       id='page-top'
-      className='relative bg-slate-700 text-black dark:text-white min-h-screen flex flex-col items-center no-scrollbar pb-32'
+      className='relative bg-slate-700 text-black dark:text-white min-h-screen flex flex-col items-center no-scrollbar pb-32 overflow-x-hidden'
       style={{
         backgroundImage: `url('/P5141283 Flying solo.jpg')`,
         backgroundPosition: 'center',
