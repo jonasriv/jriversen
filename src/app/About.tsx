@@ -5,13 +5,13 @@ import { CircleSmall } from 'lucide-react';
 export default function About () {
 
     return (
-        <div className="max-w-[1280px] flex flex-col md:flex-row items-center justify-center gap-12 w-full  h-auto">
-            <div id="about" className='bg-white/40 dark:bg-black/60 text-black dark:text-white  w-[95%] md:w-[80%] rounded-xl mx-4 p-4 flex flex-col md:flex-row h-auto'>
+        <div id="about" className="scroll-mt-32 max-w-[90%] md:max-w-[1280px] flex flex-col md:flex-row items-center justify-center gap-12 w-full h-auto">
+            <div className='bg-white/40 dark:bg-black/60 text-black dark:text-white w-[100%] md:w-[80%] rounded-xl mx-4 p-4 flex flex-col md:flex-row h-auto'>
                 <article className='gap-4 w-full'>
                     <h2 className='text-black dark:text-white uppercase text-xl md:text-3xl my-4 tracking-widest text-center'>Jonas Risløw Iversen</h2>
                     <div className='w-full flex flex-row md:flex-row justify-center items-start gap-4'>
-                        <p className="text-lg max-w-[800px]">
-                            I am a dedicated fullstack developer within modern web development, with Next / React / TypeScript / TailwindCSS as my primary stack. In addition, I am trained in machine learning technologies and neural networks. I am currently exploring ways to incorporate modern web development with various AI technologies such as Tensorflow.js
+                        <p className="text-lg max-w-[800px] tracking-wide">
+                            I am a dedicated fullstack developer within modern web development, with Next / React / TypeScript / TailwindCSS as my primary stack. In addition, I am trained in machine learning technologies and neural networks. I am currently exploring ways to incorporate modern web development with various ML technologies such as Tensorflow.js
                         </p>
                     </div>
                     

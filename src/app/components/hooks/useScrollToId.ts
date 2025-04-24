@@ -4,7 +4,7 @@ export function useScrollToId () {
         if (element) {
             element.scrollIntoView({
                 behavior: 'smooth',
-                block: 'end',
+                block: 'start',
                 inline: 'nearest'
             });
         }

@@ -31,9 +31,9 @@ export default function Projects() {
         }, 300)
     }
     return (
-        <div className="max-w-[1280px] flex flex-col items-center justify-center h-auto w-[95%] md:w-[80%] lg:w-[1024px] bg-white/40 dark:bg-black/60 rounded-lg pb-8">
+        <div id="projects" className="scroll-mt-32 max-w-[90%] md:max-w-[1280px] flex flex-col items-center justify-center h-auto w-[95%] md:w-[80%] lg:max-w-[1024px] bg-white/40 dark:bg-black/60 rounded-lg pb-8">
             <h2 className="text-black dark:text-white uppercase text-xl md:text-3xl my-4 tracking-widest">Projects and interests</h2>
-            <div id="projects" className="grid md:grid-cols-3 gap-4 w-full p-4 pb-8">
+            <div className="grid md:grid-cols-3 gap-4 w-full p-4 pb-8">
                 <div id="project1"
                     className={`h-48 w-full bg-black/60 dark:bg-white/40 rounded-lg uppercase tracking-wider text-white font-bold cursor-pointer flex flex-col justify-between border-2 border-gray-700 hover:border-white ${showingDetails == 'project1' ? 'border-white' : ''}`}
                     style={{
@@ -93,14 +93,14 @@ export default function Projects() {
                         <div>
                             <h2 className="text-xl md:text-2xl tracking-wide w-full text-center">Modern responsive web development with Next.js and TailwindCSS</h2>
                             <div className="flex flex-col lg:flex-row w-full justify-between gap-4 mt-4 items-center">
-                                <div className="md:w-[360px] border-2 border-white h-[300px] flex justify-center items-center bg-slate-800 rounded-2xl lg:hover:scale-110 md:active:scale-110 transition-all duration-300 overflow-hidden">
+                                <div className="md:w-[360px] border-3 border-white/60 h-[300px] flex justify-center items-center bg-slate-800 rounded-2xl lg:hover:scale-110 md:active:scale-110 transition-all duration-300 overflow-hidden">
                                     <Image src='/create2.jpg' width={400} height={400} style={{objectFit: 'cover'}} alt="Modern wedbdev example 1"/>
                                 </div>
-                                <div className="flex flex-row w-1/2 justify-between gap-4 lg:justify-around items-center">
-                                    <div className="w-[200px]  border-2 border-white lg:h-[300px] overflow-hidden rounded-xl bg-white hover:scale-110 active:scale-110 transition-all duration-300">
+                                <div className="flex flex-row w-1/2 justify-between gap-8 lg:justify-around items-center">
+                                    <div className="w-[200px]  border-2 border-white/60 lg:h-[300px] overflow-hidden rounded-xl bg-white hover:scale-110 active:scale-110 transition-all duration-300">
                                         <Image src='/create3.jpg' width={200} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 2"/>
                                     </div>
-                                    <div className="w-[200px]  border-2 border-white lg:h-[300px] overflow-hidden transition-all duration-300 rounded-xl bg-white active:scale-110 hover:scale-110">
+                                    <div className="w-[200px] border-2 border-white/60 lg:h-[300px] overflow-hidden transition-all duration-300 rounded-xl bg-white active:scale-110 hover:scale-110">
                                         <Image src='/create4.jpg' width={200} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@ export default function Projects() {
                             <h2 className="text-xl md:text-2xl tracking-wide w-full text-center">Fullstack web development</h2>
                             <div className="flex flex-col w-full justify-between gap-4 mt-4 items-center">
                                 <p className="w-full font-normal text-md md:text-lg tracking-wide mt-4 leading-8">
-                                    I create complete web solutions with admin portal and full costumizability. For backend, i use Next.s when possible and Node/Express when needed (complex file handling etc). 
+                                    I create complete web solutions with admin portal and full costumizability. For frontend, i prefer React in TypeScript with TailwindCSS, adding feats from ShadCN and other component libraries. For backend, i use Next.js when possible and Node/Express when needed (for  file handling etc). 
                                 </p>
                                 <h2 className="text-md md:text-2xl tracking-wide w-full text-start">Examples:</h2>
                                 <div className="flex flex-col md:grid md:grid-cols-2 lg:grid w-full gap-4">
@@ -133,9 +133,7 @@ export default function Projects() {
                                     <div className="w-auto flex p-2 justify-center items-center border-2 border-black/40 bg-black/30 h-auto overflow-hidden transition-all duration-300 rounded-xl active:scale-130 hover:scale-130">
                                         <Image src='/admin5.png' width={350} height={200} style={{objectFit: 'contain'}} alt="Fullstack example 3"/>
                                     </div>                 
-                                    <div className="w-auto flex p-2 justify-center items-center border-2 border-black/40 bg-black/30 h-auto overflow-hidden transition-all duration-300 rounded-xl active:scale-130 hover:scale-130">
-                                        <Image src='/admin6.png' width={350} height={200} style={{objectFit: 'contain'}} alt="Fullstack example 3"/>
-                                    </div>                                                                                                                                       
+                                                                                                                                      
                                 </div>
                             </div>
                         </div>
@@ -157,7 +155,7 @@ export default function Projects() {
                         </div>
                     )}      
                     <div className="w-full flex justify-center items-center pt-4">
-                        <button className="bg-orange-300 opacity-80 p-2 rounded-lg mt-4 cursor-pointer hover:bg-orange-400 border-1" onClick={() => {setShowingDetails("")}}>Back</button>
+                        <button className="bg-black/40 dark:bg-white/50 text-white dark:text-black w-96 opacity-80 p-2 rounded-xl mt-4 cursor-pointer hover:bg-white/70 hover:text-black transition-all duration-300 tracking-widest" onClick={() => {setShowingDetails("")}}>back</button>
                     </div>
                     
                 </div>
