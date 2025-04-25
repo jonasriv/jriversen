@@ -1,0 +1,103 @@
+[
+    {
+      "name": "Emma Berg",
+      "email": "emma.berg@example.com",
+      "phone": "4791234567"
+    },
+    {
+      "name": "Liam Hansen",
+      "email": "liam.hansen@example.com",
+      "phone": "4797654321"
+    },
+    {
+      "name": "Olivia Johansen",
+      "email": "olivia.johansen@example.com",
+      "phone": "4798887777"
+    },
+    {
+      "name": "Noah Nilsen",
+      "email": "noah.nilsen@example.com",
+      "phone": "4791112222"
+    },
+    {
+      "name": "Ella Kristiansen",
+      "email": "ella.kristiansen@example.com",
+      "phone": "4793334444"
+    },
+    {
+      "name": "William Karlsen",
+      "email": "william.karlsen@example.com",
+      "phone": "4795556666"
+    },
+    {
+      "name": "Nora Larsen",
+      "email": "nora.larsen@example.com",
+      "phone": "4797778888"
+    },
+    {
+      "name": "Oliver Moe",
+      "email": "oliver.moe@example.com",
+      "phone": "4799990000"
+    },
+    {
+      "name": "Sofie Andreassen",
+      "email": "sofie.andreassen@example.com",
+      "phone": "4791122334"
+    },
+    {
+      "name": "Jakob Svendsen",
+      "email": "jakob.svendsen@example.com",
+      "phone": "4792233445"
+    },
+    {
+      "name": "Leah Solberg",
+      "email": "leah.solberg@example.com",
+      "phone": "4793344556"
+    },
+    {
+      "name": "Emil Dahl",
+      "email": "emil.dahl@example.com",
+      "phone": "4794455667"
+    },
+    {
+      "name": "Maja Haugen",
+      "email": "maja.haugen@example.com",
+      "phone": "4795566778"
+    },
+    {
+      "name": "Lucas Strand",
+      "email": "lucas.strand@example.com",
+      "phone": "4796677889"
+    },
+    {
+      "name": "Ingrid Myhre",
+      "email": "ingrid.myhre@example.com",
+      "phone": "4797788990"
+    },
+    {
+      "name": "Aksel Eide",
+      "email": "aksel.eide@example.com",
+      "phone": "4798899001"
+    },
+    {
+      "name": "Mille Bjerke",
+      "email": "mille.bjerke@example.com",
+      "phone": "4799900112"
+    },
+    {
+      "name": "Henrik Lie",
+      "email": "henrik.lie@example.com",
+      "phone": "4791011121"
+    },
+    {
+      "name": "Ada Fredriksen",
+      "email": "ada.fredriksen@example.com",
+      "phone": "4792122232"
+    },
+    {
+      "name": "Theodor Knutsen",
+      "email": "theodor.knutsen@example.com",
+      "phone": "4793233343"
+    }
+  ]
+  

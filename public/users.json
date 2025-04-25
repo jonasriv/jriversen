@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "id": 12345345,
+            "name": "John Fort",
+            "position": "CEO",
+            "email": "john.fort@ceo.com",
+            "image": "portrait.jpg"
+        },
+        {
+            "id": 345689345,
+            "name": "Per Gort",
+            "position": "GEO",
+            "email": "per.gort@geo.com",
+            "image": "portrait.jpg"
+        },
+        {
+            "id": 2374892384,
+            "name": "Åge Dort",
+            "position": "FEO",
+            "email": "åge.dort@feo.com",
+            "image": "portrait.jpg"
+        }
+    ] 
+}

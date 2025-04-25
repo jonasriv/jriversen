@@ -31,8 +31,8 @@ export default function Projects() {
         }, 300)
     }
     return (
-        <div id="projects" className="scroll-mt-32 max-w-[95%] md:max-w-[1280px] flex flex-col items-center justify-center h-auto w-[95%] md:w-[80%] lg:max-w-[1024px] bg-white/40 dark:bg-black/60 rounded-lg pb-8">
-            <h2 className="text-black dark:text-white uppercase text-xl md:text-3xl my-4 tracking-widest">Projects and interests</h2>
+        <div id="projects" className="scroll-mt-32 max-w-[90%] md:max-w-[1280px] flex flex-col items-center justify-center h-auto w-[95%] md:w-[80%] lg:max-w-[1024px] bg-white/40 dark:bg-black/60 rounded-lg pb-8">
+            <h2 className="text-neutral-200 dark:text-white uppercase text-xl md:text-3xl my-4 tracking-widest">Projects and interests</h2>
             <div className="grid md:grid-cols-3 gap-4 w-full p-4 pb-8">
                 <div id="project1"
                     className={`h-48 w-full bg-black/60 dark:bg-white/40 rounded-lg uppercase tracking-wider text-white font-bold cursor-pointer flex flex-col justify-between border-2 border-gray-700 hover:border-white ${showingDetails == 'project1' ? 'border-white' : ''}`}
@@ -93,7 +93,7 @@ export default function Projects() {
                         <div>
                             <h2 className="text-xl md:text-2xl tracking-wide w-full text-center">Modern responsive web development with Next.js and TailwindCSS</h2>
                             <div className="flex flex-col lg:flex-row w-full justify-between gap-4 mt-4 items-center">
-                                <div className="md:w-[360px] border-3 border-white/60 h-[300px] flex justify-center items-center bg-slate-800 rounded-2xl lg:hover:scale-110 md:active:scale-110 transition-all duration-300 overflow-hidden">
+                                <div className="md:w-[360px] border-3 border-white/60 md:h-[300px] flex justify-center items-center bg-slate-800 rounded-2xl lg:hover:scale-110 md:active:scale-110 transition-all duration-300 overflow-hidden">
                                     <Image src='/create2.jpg' width={400} height={400} style={{objectFit: 'cover'}} alt="Modern wedbdev example 1"/>
                                 </div>
                                 <div className="flex flex-row w-1/2 justify-between gap-8 lg:justify-around items-center">
