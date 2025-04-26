@@ -1,0 +1,43 @@
+[
+    {
+      "question": "How do I reset my password?",
+      "answer": "Go to Account Settings and click on 'Change Password'. Follow the instructions to reset it securely."
+    },
+    {
+      "question": "Where can I view my recent activity?",
+      "answer": "You can view your recent activity in the 'Activity' section of your dashboard."
+    },
+    {
+      "question": "How do I update my profile information?",
+      "answer": "Navigate to 'Profile Settings' and edit your personal information. Don't forget to save changes."
+    },
+    {
+      "question": "Can I customize my dashboard layout?",
+      "answer": "Yes, you can drag and drop widgets to customize your dashboard layout according to your preferences."
+    },
+    {
+      "question": "Who do I contact for technical support?",
+      "answer": "Please contact our IT support team via the 'Help' section or email support@example.com."
+    },
+    {
+      "question": "How do I manage notifications?",
+      "answer": "You can adjust your notification preferences in the 'Notifications' tab under Settings."
+    },
+    {
+      "question": "Is my data secure?",
+      "answer": "Yes, we use industry-standard encryption and security practices to protect your data."
+    },
+    {
+      "question": "How do I generate reports?",
+      "answer": "Go to the 'Reports' section, select the type of report you need, and click 'Generate'."
+    },
+    {
+      "question": "Can I access the dashboard on mobile?",
+      "answer": "Yes, the dashboard is fully responsive and can be accessed from any mobile device."
+    },
+    {
+      "question": "What browsers are supported?",
+      "answer": "We support the latest versions of Chrome, Firefox, Edge, and Safari."
+    }
+  ]
+  

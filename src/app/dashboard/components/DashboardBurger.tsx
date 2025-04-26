@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import MobileMenu from '../MobileMenu';
+//import MobileMenu from '../MobileMenu';
 
 type BurgerProps = {
     color?: string;
@@ -25,7 +25,7 @@ export default function DashboardBurger({ color = "gray" }: BurgerProps ) {
                 <X color={color}/>
             </div>
             <div className='absolute top-14 -right-12'>
-                <MobileMenu activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
+                {/*<MobileMenu activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>*/}
             </div>
         </div>
     )

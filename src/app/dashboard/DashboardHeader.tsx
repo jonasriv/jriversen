@@ -28,8 +28,8 @@ export default function DashboardHeader() {
     }
 
     return (
-            <div className='justify-start items-start h-1/12 bg-sky-300 dark:bg-slate-700 md:bg-transparent'>
-                <div className='justify-start items-start h-full'>
+            <div className='justify-start items-start h-1/12 bg-slate-500 dark:bg-slate-700 md:bg-transparent'>
+                <div className='justify-start items-start h-full bg-slate-300/80 dark:bg-slate-700'>
                     <div className="w-full h-full bg-transparent flex flex-row justify-between items-center px-2">
                         <div 
                             className='px-4 py-2 rounded-xl flex flex-row justify-start items-center gap-4 cursor-pointer bg-transparent'

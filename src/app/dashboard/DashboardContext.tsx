@@ -12,7 +12,10 @@ interface DashProviderProps{
 }
 
 export function DashProvider({ children }: DashProviderProps) {
-    const [showingComponents, setShowingComponents] = useState<string[]>([]);
+    const [showingComponents, setShowingComponents] = useState<string[]>([
+        'users', 'account', 'calendar', 'contacts', 'money', 'faq'
+      ]);
+      
     
     return (
         <DashboardContext.Provider value={{ showingComponents, setShowingComponents }}>
