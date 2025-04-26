@@ -87,7 +87,7 @@ export default function DashboardContent() {
                 items={showingComponents}
                 strategy={verticalListSortingStrategy}
             >
-                <div className={`h-full p-2 pb-24 bg-slate-300 dark:bg-slate-700 border-t-2 border-slate-500 md:grid md:grid-cols-2 ${countComponents <= 4 ? 'lg:grid-cols-2' : 'lg:grid-cols-3'} justify-start items-start auto-rows-[minmax(300px,auto)] gap-4`}>
+                <div className={`h-full max-w-fit p-2 pb-24 bg-slate-300 dark:bg-slate-700 border-t-2 border-slate-500 md:grid md:grid-cols-2 ${countComponents <= 4 ? 'lg:grid-cols-2' : 'lg:grid-cols-3'} justify-start items-start auto-rows-[minmax(300px,auto)] gap-4`}>
                     {showingComponents && showingComponents.map((key) => {
                         const Component = componentMap[key as keyof typeof componentMap];
                         return Component 
