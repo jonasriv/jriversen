@@ -93,10 +93,15 @@ export default function Projects() {
                         <div>
                             <h2 className="text-xl md:text-2xl tracking-wide w-full text-center">Modern responsive web development with Next.js and TailwindCSS</h2>
                             {/* Create.no images */}
-                            <div className="flex flex-col lg:flex-row w-full justify-between gap-4 mt-4 items-center">
-                                <h2 className="inline-flex items-center flex-col">
-                                    Sample images from 
-                                    <a href='http://www.create.no' target='_blank' className="m-2"><span className="bg-fuchsia-700 hover:bg-fuchsia-600 p-2 border-1 rounded-lg m-3 text-sm text-white uppercase tracking-wider">www.create.no</span></a>
+                            <div className="flex flex-col lg:flex-row w-full justify-center gap-4 mt-4 items-center ">
+                                <h2 className="flex flex-col text-start  justify-center items-center">
+                                    <p>Sample images from </p>
+                                    <a href='http://www.create.no' target='_blank' className="m-2 inline-flex items-center justify-start">
+                                        <span className="bg-fuchsia-700 hover:bg-fuchsia-600 p-2 border-1 rounded-lg m-3 text-sm text-white uppercase tracking-wider flex md:flex-col gap-2">
+                                            <p>www.create.no</p> 
+                                            <p className="w-full flex justify-center"><ExternalLink/></p>
+                                        </span>
+                                    </a>
                                 </h2>
                                 <div className="md:w-[360px] border-3 border-white/60 md:h-[300px] flex justify-center items-center bg-slate-800 rounded-2xl lg:hover:scale-110 md:active:scale-110 transition-all duration-300 overflow-hidden">
                                     <Image src='/create2.jpg' width={400} height={400} style={{objectFit: 'cover'}} alt="Modern wedbdev example 1"/>
@@ -110,10 +115,15 @@ export default function Projects() {
                             </div>
                             {/* Dashboard image */}
                             <div className="flex flex-col md:flex-row justify-between gap-4 lg:justify-around items-center mt-4">
-                            <h2 className="inline-flex items-center flex-col">
-                                Sample images from 
-                                <a href='/dashboard' target='_blank' className="m-2"><span className="bg-fuchsia-700 hover:bg-fuchsia-600 p-2 border-1 rounded-lg m-3 text-sm text-white uppercase tracking-wider">Dashboard Component</span></a>
-                            </h2>
+                            <h2 className="flex flex-col text-start  justify-center items-center">
+                                    <p>Sample images from </p>
+                                    <a href='/dashboard' target='_blank' className="m-2 inline-flex items-center justify-start">
+                                        <span className="bg-fuchsia-700 hover:bg-fuchsia-600 p-2 border-1 rounded-lg m-3 text-sm text-white uppercase tracking-wider flex md:flex-col gap-2">
+                                            <p>Dashboard </p> 
+                                            <p className="w-full flex justify-center"><ExternalLink/></p>
+                                        </span>
+                                    </a>
+                                </h2>
                                 <div className="w-fit border-2 border-white/60 overflow-hidden transition-all duration-300 rounded-xl  active:scale-110 hover:scale-110">
                                     <Image src='/dashboardImage.png' width={500} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
                                 </div>
