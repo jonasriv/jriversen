@@ -1,14 +1,14 @@
 'use client'
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-//import MobileMenu from '../MobileMenu';
+import MobileMenu from './MobileMenu';
 
 type BurgerProps = {
     color?: string;
 }
 
 export default function DashboardBurger({ color = "gray" }: BurgerProps ) {
-    const [activeMenu, setActiveMenu] = useState(false);
+    const [activeMenu, setActiveMenu] = useState(true);
 
     return(
         <div className='flex flex-col md:hidden'>
@@ -24,8 +24,8 @@ export default function DashboardBurger({ color = "gray" }: BurgerProps ) {
             >
                 <X color={color}/>
             </div>
-            <div className='absolute top-14 -right-12'>
-                {/*<MobileMenu activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>*/}
+            <div className={`absolute w-full top-13 -right-0 ${activeMenu ? 'opacity-100 h-auto' : 'opacity-0 max-h-0 pointer-events-none'}`}>
+                <MobileMenu />
             </div>
         </div>
     )

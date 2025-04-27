@@ -28,7 +28,7 @@ export default function ContactsComponent() {
     }, [filterText, contacts]);
     
     return(
-        <div className='bg-slate-500 dark:bg-slate-300 p-2 rounded-lg h-90 overflow-y-scroll border-slate-600 border-2'>
+        <div className='bg-slate-500 dark:bg-slate-300 p-2 rounded-lg h-[500px] md:h-90 overflow-y-scroll border-slate-600 border-2'>
             <h2 className='bg-transparent inline-flex text-lg uppercase tracking-wider gap-4 justify-between w-full p-2 text-white dark:text-slate-800'><SquareUser/>Contacts</h2>
             <div id="searchbar" className='h-12 flex items-center w-full justify-center pb-4'>
                 <input  

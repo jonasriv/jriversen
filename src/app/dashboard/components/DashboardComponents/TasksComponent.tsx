@@ -39,7 +39,7 @@ export default function TasksComponent() {
     if(!mounted) return null;
 
     return(
-        <div className="h-90 overflow-y-scroll overflow-x-hidden border-2 border-slate-600 rounded-lg bg-slate-500 dark:bg-slate-300">
+        <div className="h-auto md:h-90 overflow-y-scroll overflow-x-hidden border-2 border-slate-600 rounded-lg bg-slate-500 dark:bg-slate-300">
             <h2 className="inline-flex items-center justify-between py-4 text-slate-300 dark:text-slate-800 uppercase tracking-wider p-2 w-full">
                 <CircleCheckBig/>
                 Tasks 

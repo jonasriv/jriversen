@@ -26,7 +26,7 @@ export default function FaqComponent() {
 
 
     return(
-        <div className="flex flex-col p-2 justify-start items-start h-90 overflow-y-scroll border-2 border-slate-600 rounded-lg bg-slate-500 dark:bg-slate-300 dark:border-slate-300">
+        <div className="flex flex-col p-2 justify-start items-start h-[700px] md:h-90 overflow-y-scroll border-2 border-slate-600 rounded-lg bg-slate-500 dark:bg-slate-300 dark:border-slate-300">
             <h2 className="inline-flex items-center text-slate-300 dark:text-slate-800 text-md uppercase tracking-wider justify-between w-full p-2"><CircleHelp/>Frequently asked questions</h2>
             <input 
                 type="text"

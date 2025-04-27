@@ -11,7 +11,7 @@ export default function Home() {
     // Home.jsx
 <div
   id='page-top'
-  className='relative bg-slate-700 text-black dark:text-white min-h-screen w-full min-w-full max-w-screen no-scrollbar'
+  className='relative bg-slate-700 text-black dark:text-white min-h-screen w-full min-w-full max-w-screen no-scrollbar overflow-x-hidden'
   style={{
     backgroundImage: `url('/P5141283 Flying solo.jpg')`,
     backgroundPosition: 'center',

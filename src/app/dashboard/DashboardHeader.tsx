@@ -32,9 +32,9 @@ export default function DashboardHeader() {
                 <div className='justify-start items-start h-full min-w-full bg-slate-300/80 dark:bg-slate-700'>
                     <div className="w-full h-full bg-transparent flex flex-row justify-between items-center px-2">
                         <div 
-                            className='px-4 py-2 rounded-xl flex flex-row justify-start items-center gap-4 cursor-pointer bg-transparent'
+                            className='md:px-4 py-2 rounded-xl flex flex-row justify-start items-center gap-4 cursor-pointer bg-transparent'
                         >
-                            <LayoutDashboardIcon color={`orange`} size="24"/>
+                            <LayoutDashboardIcon color={`#d63c04`} size="24"/>
                             <div className='hidden md:block text-md md:text-xl lowercase tracking-widest items-center'>Dashboard</div>
                         </div>
                         <div className='flex flex-row gap-4 items-center py-2 px-6 rounded-sm '>
@@ -74,8 +74,8 @@ export default function DashboardHeader() {
                             {/* Profile image*/}
                             {/* <Settings color="gray"/> */}
                             {/*Burger for mobile view. */}
-                            <div className='md:hidden'>
-                                <DashboardBurger color='black'/>
+                            <div className='md:hidden bg-black/30 rounded-lg dark:bg-white/30'>
+                                <DashboardBurger color='white'/>
                             </div>
                         </div>
                     </div>

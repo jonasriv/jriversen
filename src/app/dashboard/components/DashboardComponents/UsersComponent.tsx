@@ -10,7 +10,7 @@ export default function UsersComponent() {
     useGetAllUsers({ setUsers })
 
     return(
-        <div className="w-full h-90 p-2 overflow-y-scroll rounded-lg border-3 border-slate-600 bg-slate-500 dark:bg-slate-300">
+        <div className="w-full h-auto md:h-90 p-2 overflow-y-scroll rounded-lg border-3 border-slate-600 bg-slate-500 dark:bg-slate-300">
             <h2 className="inline-flex items-center justify-between text-slate-200 dark:text-slate-700 text-xl w-full p-2 uppercase px-2 rounded-lg">
                 <span className="border-2 border-slate-200 dark:border-slate-700 rounded-sm p-[2px] pb-0"><Users size='18'/></span>
                 Users 

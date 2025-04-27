@@ -92,19 +92,35 @@ export default function Projects() {
                     {showingDetails == 'project1' && (
                         <div>
                             <h2 className="text-xl md:text-2xl tracking-wide w-full text-center">Modern responsive web development with Next.js and TailwindCSS</h2>
+                            {/* Create.no images */}
                             <div className="flex flex-col lg:flex-row w-full justify-between gap-4 mt-4 items-center">
+                                <h2 className="inline-flex items-center flex-col">
+                                    Sample images from 
+                                    <a href='http://www.create.no' target='_blank' className="m-2"><span className="bg-fuchsia-700 hover:bg-fuchsia-600 p-2 border-1 rounded-lg m-3 text-sm text-white uppercase tracking-wider">www.create.no</span></a>
+                                </h2>
                                 <div className="md:w-[360px] border-3 border-white/60 md:h-[300px] flex justify-center items-center bg-slate-800 rounded-2xl lg:hover:scale-110 md:active:scale-110 transition-all duration-300 overflow-hidden">
                                     <Image src='/create2.jpg' width={400} height={400} style={{objectFit: 'cover'}} alt="Modern wedbdev example 1"/>
                                 </div>
-                                <div className="flex flex-row w-1/2 justify-between gap-8 lg:justify-around items-center">
-                                    <div className="w-[200px]  border-2 border-white/60 lg:h-[300px] overflow-hidden rounded-xl bg-white hover:scale-110 active:scale-110 transition-all duration-300">
-                                        <Image src='/create3.jpg' width={200} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 2"/>
-                                    </div>
-                                    <div className="w-[200px] border-2 border-white/60 lg:h-[300px] overflow-hidden transition-all duration-300 rounded-xl bg-white active:scale-110 hover:scale-110">
-                                        <Image src='/create4.jpg' width={200} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
-                                    </div>
+                                <div className="w-[200px] border-2 border-white/60 lg:h-[300px] overflow-hidden transition-all duration-300 rounded-xl bg-white active:scale-110 hover:scale-110">
+                                        <Image src='/create3.jpg' width={200} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
                                 </div>
+                                <div className="w-[200px] border-2 border-white/60 lg:h-[300px] overflow-hidden transition-all duration-300 rounded-xl bg-white active:scale-110 hover:scale-110">
+                                        <Image src='/create4.jpg' width={200} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
+                                </div>                                
                             </div>
+                            {/* Dashboard image */}
+                            <div className="flex flex-col md:flex-row justify-between gap-4 lg:justify-around items-center mt-4">
+                            <h2 className="inline-flex items-center flex-col">
+                                Sample images from 
+                                <a href='/dashboard' target='_blank' className="m-2"><span className="bg-fuchsia-700 hover:bg-fuchsia-600 p-2 border-1 rounded-lg m-3 text-sm text-white uppercase tracking-wider">Dashboard Component</span></a>
+                            </h2>
+                                <div className="w-fit border-2 border-white/60 overflow-hidden transition-all duration-300 rounded-xl  active:scale-110 hover:scale-110">
+                                    <Image src='/dashboardImage.png' width={500} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
+                                </div>
+                                <div className="w-fit border-2 border-white/60 overflow-hidden transition-all duration-300 rounded-xl  active:scale-110 hover:scale-110">
+                                    <Image src='/dashboardImagePhone.png' width={150} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
+                                </div>                                
+                            </div>                            
                             <p className="font-normal text-md md:text-lg tracking-wide mt-4 leading-8">I build fully responsive and scalable websites with Next.js, React, TypeScript and TailwindCSS. I am enthousiastic about neat designs and intuitive user experiences. 
                                 Take a look at <span className="bg-black/70 px-2 py-1 rounded-lg hover:bg-black/20 transition-all duration-300">
                                 <a target="_blank" className="uppercase text-white hover:text-black transition-all duration-300 text-sm font-bold whitespace-nowrap inline-flex items-center" href="https://www.create.no">

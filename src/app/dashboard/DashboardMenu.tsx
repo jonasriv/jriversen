@@ -18,10 +18,10 @@ export default function DashboardMenu() {
     }
     return (
         <div 
-            className='hidden md:flex bg-slate-400 dark:bg-slate-800 h-full min-h-screen overflow-hidden w-full p-2 flex-col'
+            className='flex bg-slate-400 dark:bg-slate-800 h-full min-h-screen overflow-hidden w-full p-2 flex-col'
         >
             <div className='border-0 flex flex-col gap-4 w-full justify-start items-center mb-12 min-h-42 '>
-                <h2 className='uppercase tracking-widest text-xl font-normal border-b-1'>Admin</h2>
+                <h2 className='uppercase tracking-widest text-xl font-normal border-b-1 hidden md:block'>Admin</h2>
                 {user &&
                     <>
                         <Image 
