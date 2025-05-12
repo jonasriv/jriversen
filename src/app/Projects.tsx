@@ -113,24 +113,7 @@ export default function Projects() {
                                         <Image src='/create4.jpg' width={200} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
                                 </div>                                
                             </div>
-                            {/* Dashboard image */}
-                            <div className="flex flex-col md:flex-row justify-between gap-4 lg:justify-around items-center mt-4">
-                            <h2 className="flex flex-col text-start  justify-center items-center">
-                                    <p>Sample images from </p>
-                                    <a href='/dashboard' target='_blank' className="m-2 inline-flex items-center justify-start">
-                                        <span className="bg-fuchsia-700 hover:bg-fuchsia-600 p-2 border-1 rounded-lg m-3 text-sm text-white uppercase tracking-wider flex md:flex-col gap-2">
-                                            <p>Dashboard </p> 
-                                            <p className="w-full flex justify-center"><ExternalLink/></p>
-                                        </span>
-                                    </a>
-                                </h2>
-                                <div className="w-fit border-2 border-white/60 overflow-hidden transition-all duration-300 rounded-xl  active:scale-110 hover:scale-110">
-                                    <Image src='/dashboardImage.png' width={500} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
-                                </div>
-                                <div className="w-fit border-2 border-white/60 overflow-hidden transition-all duration-300 rounded-xl  active:scale-110 hover:scale-110">
-                                    <Image src='/dashboardImagePhone.png' width={150} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
-                                </div>                                
-                            </div>                            
+                                                      
                             <p className="font-normal text-md md:text-lg tracking-wide mt-4 leading-8">I build fully responsive and scalable websites with Next.js, React, TypeScript and TailwindCSS. I am enthousiastic about neat designs and intuitive user experiences. </p>
                             <p className="font-normal text-md md:text-lg tracking-wide mt-4 leading-8">Take a look at &nbsp;
                                 <span className="bg-black/70 px-2 py-1 rounded-lg hover:bg-black/20 transition-all duration-300"> 
@@ -138,9 +121,9 @@ export default function Projects() {
                                         Create.no &nbsp;<ExternalLink size={14}/>
                                     </a>
                                 </span>
-                                &nbsp;or view the code for this site on &nbsp;
+                                &nbsp;or view the code on &nbsp;
                                 <span className="bg-black/70 px-2 py-1 rounded-lg hover:bg-black/20 transition-all duration-300"> 
-                                    <a target="_blank" className="uppercase text-white hover:text-black transition-all duration-300 text-sm font-bold whitespace-nowrap inline-flex items-center" href="https://github.com/jonasriv/jriversen/">
+                                    <a target="_blank" className="uppercase text-white hover:text-black transition-all duration-300 text-sm font-bold whitespace-nowrap inline-flex items-center" href="https://github.com/jonasriv/Create-Highschool-Website-and-Administration-Portal">
                                         GitHub &nbsp;<ExternalLink size={14}/>
                                     </a>                                    
                                 </span>
@@ -152,25 +135,34 @@ export default function Projects() {
                             <h2 className="text-xl md:text-2xl tracking-wide w-full text-center">Fullstack web development</h2>
                             <div className="flex flex-col w-full justify-between gap-4 mt-4 items-center">
                                 <p className="w-full font-normal text-md md:text-lg tracking-wide mt-4 leading-8">
-                                    I create complete web solutions with admin portal and full costumizability. For frontend, i prefer React in TypeScript with TailwindCSS, adding feats from ShadCN and other component libraries. For backend, i use Next.js when possible and Node/Express when needed (for  file handling etc). 
+                                    I create complete web solutions with admin portal and full costumizability. For frontend, i prefer Next / React in TypeScript with TailwindCSS, adding feats from ShadCN and other component libraries. For backend, i use Node.js / Express, PostgreSQL, MongoDB and FastAPI (Python). 
                                 </p>
-                                <h2 className="text-md md:text-2xl tracking-wide w-full text-start">Examples:</h2>
-                                <div className="flex flex-col md:grid md:grid-cols-2 lg:grid w-full gap-4">
-                                    <div className="w-auto flex p-2 justify-center items-center border-2 border-black/40 bg-black/30 h-auto overflow-hidden transition-all duration-300 rounded-xl active:scale-130 hover:scale-130">
-                                        <Image src='/admin1.png' width={350} height={200} style={{objectFit: 'contain'}} alt="Fullstack example 1"/>
-                                    </div>
-                                    <div className="w-auto flex p-2 justify-center items-center border-2 border-black/40 bg-black/30 h-auto overflow-hidden transition-all duration-300 rounded-xl active:scale-130 hover:scale-130">
-                                        <Image src='/admin3.png' width={350} height={200} style={{objectFit: 'contain'}} alt="Fullstack example 2"/>
-                                    </div>       
-                                    <div className="w-auto flex p-2 justify-center items-center border-2 border-black/40 bg-black/30 h-auto overflow-hidden transition-all duration-300 rounded-xl active:scale-130 hover:scale-130">
-                                        <Image src='/admin4.png' width={350} height={200} style={{objectFit: 'contain'}} alt="Fullstack example 3"/>
-                                    </div>        
-                                    <div className="w-auto flex p-2 justify-center items-center border-2 border-black/40 bg-black/30 h-auto overflow-hidden transition-all duration-300 rounded-xl active:scale-130 hover:scale-130">
-                                        <Image src='/admin5.png' width={350} height={200} style={{objectFit: 'contain'}} alt="Fullstack example 3"/>
-                                    </div>                 
-                                                                                                                                      
+                            {/* Dashboard images */}
+                            <div className="flex flex-col md:flex-row justify-between gap-4 lg:justify-around items-center mt-4">
+                            <h2 className="flex flex-col text-start  justify-center items-center">
+  
+                                </h2>
+                                <div className="w-fit border-2 border-white/60 overflow-hidden transition-all duration-300 rounded-xl  active:scale-110 hover:scale-110">
+                                    <Image src='/dashboardImage.png' width={500} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
                                 </div>
+                                <div className="w-fit border-2 border-white/60 overflow-hidden transition-all duration-300 rounded-xl  active:scale-110 hover:scale-110">
+                                    <Image src='/dashboardImagePhone.png' width={150} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
+                                </div>                                
+                            </div>  
                             </div>
+                            <p className="font-normal text-md md:text-lg tracking-wide mt-8 leading-8">Please try out my &nbsp;
+                                <span className="bg-black/70 px-2 py-1 rounded-lg hover:bg-black/20 hover:text-white transition-all duration-300"> 
+                                    <a target="_blank" className="uppercase text-white hover:text-black dark:hover:text-white transition-all duration-300 text-sm font-bold whitespace-nowrap inline-flex items-center" href="/dashboard">
+                                        Dashboard &nbsp;<ExternalLink size={14}/>
+                                    </a>
+                                </span>
+                                &nbsp;or view the code on &nbsp;
+                                <span className="bg-black/70 px-2 py-1 rounded-lg hover:bg-black/20 hover:text-white transition-all duration-300"> 
+                                    <a target="_blank" className="uppercase text-white hover:text-black dark:hover:text-white transition-all duration-300 text-sm font-bold whitespace-nowrap inline-flex items-center" href="https://github.com/jonasriv/jriversen">
+                                        GitHub &nbsp;<ExternalLink size={14}/>
+                                    </a>                                    
+                                </span>
+                            </p>
                         </div>
                     )}
                     {showingDetails == 'project3' && (
