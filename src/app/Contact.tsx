@@ -1,5 +1,5 @@
 'use client';
-import { IdCard, Mail, House, PersonStanding, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { IdCard, Mail, House, PersonStanding, Linkedin, Twitter, Facebook, Github } from 'lucide-react';
 
 export default function Contact() {
     return (
@@ -20,10 +20,11 @@ export default function Contact() {
                         className="h-auto md:h-42 w-full p-2 bg-black/60 dark:bg-white/40 rounded-lg tracking-wider text-white text-shadow-black"
                     >
                         <h2 className="text-lg uppercase inline-flex gap-2 items-center border-b-2 w-full"><IdCard size={22}/>Social:</h2>
-                        <ul className="tracking-wide font-light leading-6 mt-2 flex flex-col gap-4">
+                        <ul className="tracking-wide font-light leading-6 mt-2 flex flex-col gap-2">
                             <li className='inline-flex items-center gap-4 text-sm'><Linkedin size={14} color="white"/><a target="_blank" href="http://www.linkedin.com/in/jonas-risløw-iversen-3b593a57">linkedIn profile</a></li>
                             <li className='inline-flex items-center gap-4 text-sm'><Twitter size={14} color="white"/><a target="_blank" href="https://x.com/jonasriv">Twitter profile</a></li>
                             <li className='inline-flex items-center gap-4 text-sm'><Facebook size={14} color="white"/><a target="_blank" href="https://www.facebook.com/profile.php/?id=1318854899">Facebook profile</a></li>
+                            <li className='inline-flex items-center gap-4 text-sm'><Github size={14} color="white"/><a target="_blank" href="https://Github.com/jonasriv/">Github/jonasriv</a></li>
                             
                         </ul>
                     </div>

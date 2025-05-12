@@ -8,10 +8,11 @@ interface AuthContextType {
 
 interface User {
     id: string, 
-    name: string, 
-    position: string
+    username: string, 
+    role: string
     email: string,
-    image: string
+    image: string,
+    access: string[],
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);

@@ -39,11 +39,11 @@ export default function DashboardHeader() {
                         </div>
                         <div className='flex flex-row gap-4 items-center py-2 px-6 rounded-sm '>
                             <div id="select_user" className='bg-slate-300 text-slate-800 md:px-6 flex flex-row justify-start items-start py-2 rounded-xl'>
-                                <select onChange={handleUserSelect} value={user?.id || ''}>
+                                <select onChange={handleUserSelect} value={user?.id || ''} className="focus:outline-none focus:ring-0">
                                     <option value="" disabled className=''>Select user:</option>
                                     {allUsers.map((u: User) => (
-                                        <option key={u.id} value={u.id}>
-                                            {u.name} ({u.position})
+                                        <option key={u.id} value={u.id} >
+                                            {u.username} ({u.role})
                                         </option>
                                     ))}
                                     <option></option>
@@ -52,7 +52,7 @@ export default function DashboardHeader() {
                             <div>
                             {user && (
                                 <Image
-                                    src={`/${user.image}`}
+                                    src={`${process.env.NEXT_PUBLIC_API_ADDRESS}/${user.image}`}
                                     width={50}
                                     height={50}
                                     alt="Profile picture"

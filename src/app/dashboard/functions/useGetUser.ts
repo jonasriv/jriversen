@@ -13,12 +13,13 @@ export function useGetUser({ user, setUser, userId }:  GetUserInterface ) {
             if (userId == "") return;
             const fetchUser = async () => {
                 try {
-                    const result = await fetch('/users.json');
-                    if (!result.ok) throw new Error("User could not be got");
+                    const result = await fetch(`${process.env.NEXT_PUBLIC_API_ADDRESS}/data`);
+                    if (!result.ok) throw new Error("User could not be fetched");
                     const data = await result.json();
-                    const foundUser = data.users.find((u: User) => u.id.toString() === userId);
+                    const foundUser = data.find((u: User) => u.id.toString() === userId);
                     if (foundUser) {
                         setUser(foundUser);
+                        console.log("THIS IS THE USER: ", user?.username);
                     } else {
                         console.warn("User not found");
                     }

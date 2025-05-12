@@ -10,12 +10,18 @@ export function useGetAllUsers({ setUsers }:  GetAllUsersInterface ) {
     useEffect(() => {
         const fetchAllUsers = async () => {
             try {
-                const result = await fetch('/users.json');
-                if (!result.ok) throw new Error("Users could not be got");
+                console.log("HELLO");
+                const result = await fetch(`${process.env.NEXT_PUBLIC_API_ADDRESS}/data`, {
+                    method: 'GET',
+                    mode: 'cors'
+                });
+                if (!result.ok) throw new Error("Users could not be fetched");
                 const data = await result.json();
-                setUsers(data.users);
+                console.log("DATA: ", data);
+                setUsers(data);
+                console.log(data);
             } catch (err) {
-                console.error("Could not fetch user", err);
+                console.error("Could not fetch users", err);
             }
         }
         fetchAllUsers();

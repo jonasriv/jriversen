@@ -131,11 +131,20 @@ export default function Projects() {
                                     <Image src='/dashboardImagePhone.png' width={150} height={200} style={{objectFit: 'cover'}} alt="Modern wedbdev example 3"/>
                                 </div>                                
                             </div>                            
-                            <p className="font-normal text-md md:text-lg tracking-wide mt-4 leading-8">I build fully responsive and scalable websites with Next.js, React, TypeScript and TailwindCSS. I am enthousiastic about neat designs and intuitive user experiences. 
-                                Take a look at <span className="bg-black/70 px-2 py-1 rounded-lg hover:bg-black/20 transition-all duration-300">
-                                <a target="_blank" className="uppercase text-white hover:text-black transition-all duration-300 text-sm font-bold whitespace-nowrap inline-flex items-center" href="https://www.create.no">
-                                    Create.no &nbsp;<ExternalLink size={14}/>
-                                </a></span></p>
+                            <p className="font-normal text-md md:text-lg tracking-wide mt-4 leading-8">I build fully responsive and scalable websites with Next.js, React, TypeScript and TailwindCSS. I am enthousiastic about neat designs and intuitive user experiences. </p>
+                            <p className="font-normal text-md md:text-lg tracking-wide mt-4 leading-8">Take a look at &nbsp;
+                                <span className="bg-black/70 px-2 py-1 rounded-lg hover:bg-black/20 transition-all duration-300"> 
+                                    <a target="_blank" className="uppercase text-white hover:text-black transition-all duration-300 text-sm font-bold whitespace-nowrap inline-flex items-center" href="https://www.create.no">
+                                        Create.no &nbsp;<ExternalLink size={14}/>
+                                    </a>
+                                </span>
+                                &nbsp;or view the code for this site on &nbsp;
+                                <span className="bg-black/70 px-2 py-1 rounded-lg hover:bg-black/20 transition-all duration-300"> 
+                                    <a target="_blank" className="uppercase text-white hover:text-black transition-all duration-300 text-sm font-bold whitespace-nowrap inline-flex items-center" href="https://github.com/jonasriv/jriversen/">
+                                        GitHub &nbsp;<ExternalLink size={14}/>
+                                    </a>                                    
+                                </span>
+                            </p>
                         </div>
                     )}
                     {showingDetails == 'project2' && (

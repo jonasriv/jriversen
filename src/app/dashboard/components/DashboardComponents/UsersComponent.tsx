@@ -18,11 +18,11 @@ export default function UsersComponent() {
             <div className="flex flex-col items-start justify-start gap-2 w-full">
                 {users?.map((user, index) => (
                     
-                    <div className="flex flex-col bg-slate-300 dark:bg-slate-500 p-2 rounded-lg w-full" key={index}>
+                    <div className="flex flex-col bg-slate-300 dark:bg-slate-500 p-2 rounded-lg w-full tracking-wider " key={index}>
                         <span className="text-xl inline-flex items-center gap-2 mb-4">
                             
                             <Image  
-                                src={`/${user.image}`}
+                                src={`${process.env.NEXT_PUBLIC_API_ADDRESS}/${user.image}`}
                                 alt="UserImage"
                                 width={50}
                                 height={50}
@@ -32,11 +32,20 @@ export default function UsersComponent() {
                                     objectPosition: 'center'
                                 }}
                             />
-                            {user.name}
+                            {user.username}
                         </span>
-                        <span>Role: {user.position}</span>
-                        <span>Phone: {user.id}</span>
-                        <span>Mail: {user.email}</span>
+                        <span><b>Role</b>: {user.role}</span>
+                        <span><b>Mail</b>: {user.email}</span>
+                        <span><b>Access</b>: 
+                            <ul className="flex flex-row italic divide-x-2">
+                                {user.access.map((item, index) => (
+                                    <li key={index} className={`pr-2 ${index > 0 ? 'pl-2' : ''}`}>
+                                        {item}
+
+                                    </li>
+                                ))}
+                            </ul>
+                        </span>
                     </div>
                 ))}
             </div>
