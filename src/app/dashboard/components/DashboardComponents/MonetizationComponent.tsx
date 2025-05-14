@@ -26,14 +26,33 @@ export default function MonetizationComponent() {
                 <Landmark/>    
                 Revenue history
             </h2>
-            <div className='bg-slate-200 p-2 rounded-lg flex justify-center items-start w-full'>
-                <LineChart width={330} height={260} data={data}>
-                    <CartesianGrid stroke='#ccc'/>
-                    <XAxis dataKey="name" />
-                    <YAxis/>
-                    <Tooltip/>
-                    <Legend/>
-                    <Line type="monotone" dataKey="revenue" stroke="#8884d8"/>
+            <div className='bg-slate-200 p-2 rounded-lg flex justify-center items-start w-full h-full'>
+                <LineChart
+                width={600}
+                height={260}
+                data={data}
+                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                    <XAxis dataKey="name" tick={{ fontSize: 12, fill: "#555" }} />
+                    <YAxis tick={{ fontSize: 12, fill: "#555" }} />
+                    <Tooltip
+                        contentStyle={{ backgroundColor: "#fff", borderColor: "#ccc", borderRadius: 10 }}
+                        labelStyle={{ color: "#000000", fontWeight: "bold" }}
+                    />
+                    <Legend
+                        verticalAlign="top"
+                        height={36}
+                        wrapperStyle={{ fontSize: 20, color: "#333" }}
+                    />
+                    <Line
+                        type="monotone"
+                        dataKey="revenue"
+                        stroke="#6366f1"
+                        strokeWidth={3}
+                        dot={{ r: 5, stroke: '#6366f1', strokeWidth: 2, fill: '#fff' }}
+                        activeDot={{ r: 9 }}
+                    />
                 </LineChart>
             </div>
         </div>

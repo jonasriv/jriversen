@@ -10,5 +10,8 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+    .fancy-background{
+      @apply bg-gradient-to-r from-stone-300 to-stone-400 dark:bg-gradient-to-r dark:from-sky-950 dark:to-sky-900
+    }
   }
 

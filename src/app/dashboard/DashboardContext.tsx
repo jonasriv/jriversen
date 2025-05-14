@@ -11,6 +11,8 @@ interface DashProviderProps{
     children: ReactNode;
 }
 
+
+
 export function DashProvider({ children }: DashProviderProps) {
     const [showingComponents, setShowingComponents] = useState<string[]>([
         'users', 'account', 'calendar', 'contacts', 'money', 'faq'

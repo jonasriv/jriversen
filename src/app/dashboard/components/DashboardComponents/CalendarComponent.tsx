@@ -33,7 +33,7 @@ export default function CalendarComponent() {
                 <CalendarIcon/>
                 Calendar
             </h2>
-            <div className='flex flex-col md:flex-row gap-1'>
+            <div className='flex flex-col md:flex-row gap-1 rounded-lg overflow-hidden'>
                 <Calendar 
                     onChange={onChange} 
                     value={value}

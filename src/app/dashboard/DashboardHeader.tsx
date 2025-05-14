@@ -28,8 +28,8 @@ export default function DashboardHeader() {
     }
 
     return (
-            <div className='justify-start min-w-fit items-start h-1/12 bg-slate-500 dark:bg-slate-700 md:bg-transparent'>
-                <div className='justify-start items-start h-full min-w-full bg-slate-300/80 dark:bg-slate-700'>
+            <div className='justify-start min-w-fit items-start h-1/12 bg-blue-200 dark:bg-slate-700 md:bg-transparent'>
+                <div className='justify-start items-start h-full min-w-full fancy-background'>
                     <div className="w-full h-full bg-transparent flex flex-row justify-between items-center px-2">
                         <div 
                             className='md:px-4 py-2 rounded-xl flex flex-row justify-start items-center gap-4 cursor-pointer bg-transparent'
@@ -38,12 +38,12 @@ export default function DashboardHeader() {
                             <div className='hidden md:block text-md md:text-xl lowercase tracking-widest items-center'>Dashboard</div>
                         </div>
                         <div className='flex flex-row gap-4 items-center py-2 px-6 rounded-sm '>
-                            <div id="select_user" className='bg-slate-300 text-slate-800 md:px-6 flex flex-row justify-start items-start py-2 rounded-xl'>
-                                <select onChange={handleUserSelect} value={user?.id || ''} className="focus:outline-none focus:ring-0">
+                            <div id="select_user" className='bg-slate-300 text-slate-800 md:px-6 flex flex-row justify-start items-start py-2 rounded-xl text-xl tracking-wider'>
+                                <select onChange={handleUserSelect} value={user?.id || ''} className="focus:outline-none focus:ring-0 ">
                                     <option value="" disabled className=''>Select user:</option>
                                     {allUsers.map((u: User) => (
-                                        <option key={u.id} value={u.id} >
-                                            {u.username} ({u.role})
+                                        <option key={u.id} value={u.id}>
+                                            {u.username} ({u.role}) 
                                         </option>
                                     ))}
                                     <option></option>
