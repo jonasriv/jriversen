@@ -26,7 +26,7 @@ export default function DashboardMenu() {
                 {user &&
                     <>
                         <Image 
-                            src={`https://gamlevegen.no/${user.image}`}  // Pass på at user.image f.eks. 'profile.jpg' og ligger i public-mappen
+                            src={`https://www.gamlevegen.no/${user.image}`}  // Pass på at user.image f.eks. 'profile.jpg' og ligger i public-mappen
                             alt='Profile picture'
                             height={60}
                             width={60}

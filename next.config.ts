@@ -4,9 +4,8 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: '185.35.185.149',
-        port: '3000',
+        protocol: 'https',
+        hostname: 'www.gamlevegen.no',
         pathname: '/**',
       },
     ],
