@@ -13,7 +13,7 @@ export function useGetUser({ user, setUser, userId }:  GetUserInterface ) {
             if (userId == "") return;
             const fetchUser = async () => {
                 try {
-                    const result = await fetch(`${process.env.NEXT_PUBLIC_API_ADDRESS}/data`);
+                    const result = await fetch(`https://www.gamlevegen.no/data`);
                     if (!result.ok) throw new Error("User could not be fetched");
                     const data = await result.json();
                     const foundUser = data.find((u: User) => u.id.toString() === userId);

@@ -22,7 +22,7 @@ export default function UsersComponent() {
                         <span className="text-xl inline-flex items-center gap-2 mb-4">
                             
                             <Image  
-                                src={`${process.env.NEXT_PUBLIC_API_ADDRESS}/${user.image}`}
+                                src={`https://www.gamlevegen.no/${user.image}`}
                                 alt="UserImage"
                                 width={50}
                                 height={50}
