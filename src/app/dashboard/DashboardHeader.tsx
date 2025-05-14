@@ -52,7 +52,7 @@ export default function DashboardHeader() {
                             <div>
                             {user && (
                                 <Image
-                                    src={`${process.env.NEXT_PUBLIC_API_ADDRESS}/${user.image}`}
+                                    src={`https://www.gamlevegen.no/${user.image}`}
                                     width={50}
                                     height={50}
                                     alt="Profile picture"
