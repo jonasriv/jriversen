@@ -11,7 +11,7 @@ export function useGetAllUsers({ setUsers }:  GetAllUsersInterface ) {
         const fetchAllUsers = async () => {
             try {
                 console.log("HERE COMES SERVER:")
-                const result = await fetch(`${process.env.NEXT_PUBLIC_API_ADDRESS}/data`, {
+                const result = await fetch(`https://www.gamlevegen.no/data`, {
                     method: 'GET',
                     mode: 'cors'
                 });
