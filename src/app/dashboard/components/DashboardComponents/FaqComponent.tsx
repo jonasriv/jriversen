@@ -26,8 +26,8 @@ export default function FaqComponent() {
 
 
     return(
-        <div className="flex flex-col p-2 justify-start items-start h-[700px] md:h-90 overflow-y-scroll border-2 border-slate-600 rounded-lg bg-slate-500 dark:bg-slate-300 dark:border-slate-300">
-            <h2 className="inline-flex items-center text-slate-300 dark:text-slate-800 text-md uppercase tracking-wider justify-between w-full p-2"><CircleHelp/>Frequently asked questions</h2>
+        <div className="dashboard-component-outer">
+            <h2 className="dashboard-component-header"><CircleHelp/>Frequently asked questions</h2>
             <input 
                 type="text"
                 about="search filter"
@@ -37,7 +37,7 @@ export default function FaqComponent() {
             />
             <div className="w-full flex flex-col gap-1 mt-2"> 
                 {filteredQuestions.map((question, index) => (
-                    <div key={index} className={`w-full px-2 py-2 text-black ${index % 2 === 0 ? 'bg-slate-500 text-white' : 'bg-slate-400'}`}>
+                    <div key={index} className={`w-full px-2 py-2 text-black ${index % 2 === 0 ? 'bg-slate-400 ' : 'bg-slate-500'}`}>
                         <span 
                             className="inline-flex items-center justify-between px-2 w-full cursor-pointer"
                             onClick={() => {

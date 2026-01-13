@@ -105,7 +105,7 @@ export default function DashboardContent() {
                 items={showingComponents}
                 strategy={verticalListSortingStrategy}
             > 
-                <div className={`h-full border-t-2 border-slate-400 p-2 pb-24 fancy-background md:grid md:grid-cols-2 ${countComponents <= 4 ? 'lg:grid-cols-2' : 'lg:grid-cols-3'} justify-start items-start gap-4`}>
+                <div className={`h-full border-t-2 border-slate-400 p-2 pb-24 content-background md:grid md:grid-cols-2 ${countComponents <= 4 ? 'lg:grid-cols-2' : 'lg:grid-cols-3'} justify-start items-start gap-4`}>
                     {user == null && <p>Please sign in!</p>}
                     {countComponents < 1 && user && <p>Please toggle components</p>}
                     {showingComponents && showingComponents.map((key) => {
@@ -117,7 +117,7 @@ export default function DashboardContent() {
                                 key={key} 
                                 className={`w-full h-full ${key === 'calendar' ? 'col-span-1 row-span-1' : 'col-span-1 row-span-1'}`}
                             >
-                                <div className='w-full max-w-[600px] bg-slate-500 dark:bg-slate-400 h-full min-h-[100%] rounded-lg mb-4'>
+                                <div className='w-full max-w-[600px] h-full min-h-[100%] rounded-lg mb-4'>
                                     <Component />
                                 </div>
                             </div> 

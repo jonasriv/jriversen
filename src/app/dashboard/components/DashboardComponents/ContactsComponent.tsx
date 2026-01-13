@@ -28,8 +28,8 @@ export default function ContactsComponent() {
     }, [filterText, contacts]);
     
     return(
-        <div className='bg-slate-500 dark:bg-slate-300 p-2 rounded-lg h-[500px] md:h-90 overflow-y-scroll border-slate-600 border-2'>
-            <h2 className='bg-transparent inline-flex text-lg uppercase tracking-wider gap-4 justify-between w-full p-2 text-white dark:text-slate-800'><SquareUser/>Contacts</h2>
+        <div className='dashboard-component-outer'>
+            <h2 className='dashboard-component-header'><SquareUser/>Contacts</h2>
             <div id="searchbar" className='h-12 flex items-center w-full justify-center pb-4'>
                 <input  
                     type="text"
@@ -40,13 +40,13 @@ export default function ContactsComponent() {
                     onChange={(e) => setFilterText(e.target.value)}
                 />
             </div>
-            <ul className='h-full overflow-scroll bg-transparent border-t-1 border-white pt-2'>
+            <ul className='h-full overflow-scroll bg-transparent border-t-1 border-white pt-2 w-full'>
             {filteredContacts.map((contact, index) => (
                 <li key={index} 
-                    className={`w-full flex flex-col justify-start items-start gap-2 pt-2 pb-2 ${index % 2 === 0 ? 'bg-slate-400/10' : 'bg-slate-400/50'}`}
+                    className={`w-full flex flex-col justify-start items-start gap-2 pt-2 pb-2 cursor-pointer ${index % 2 === 0 ? 'bg-slate-400/10' : 'bg-slate-400/50'}`}
                     onClick={() => {setShowDetails(contact.phone)}}
                 >
-                    <p className='inline-flex px-2 items-center gap-2 text-slate-200 dark:text-slate-950 justify-between w-full'>
+                    <p className='inline-flex px-2 items-center gap-2 text-slate-950 justify-between w-full'>
                         <span className='inline-flex items-center gap-2'>
                             <User color='blue' size={14}/> 
                             {contact.name}
@@ -58,8 +58,8 @@ export default function ContactsComponent() {
                                                                         <CircleChevronUp size='18'/></span> : <CircleChevronDown size='18'/>}
                     </p>
                     <span className={`transition-all duration-300 flex flex-col gap-2 overflow-hidden ${showingDetails ? contact.phone === showingDetails.phone ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0' : 'max-h-0 opacity-0'}`}>
-                        <p className='inline-flex px-2 items-center gap-2 text-slate-300 dark:text-slate-800'><Mail color='darkgreen' size={14}/> <a href={`mailto:${contact.email}`}>{contact.email}</a></p>
-                        <p className='inline-flex px-2 items-center gap-2 text-slate-300 dark:text-slate-800'><Phone color='purple' size={14}/> <a href={`tel:${contact.phone}`}>{contact.phone}</a></p>
+                        <p className='inline-flex px-2 items-center gap-2 text-slate-900 '><Mail color='darkgreen' size={14}/> <a href={`mailto:${contact.email}`}>{contact.email}</a></p>
+                        <p className='inline-flex px-2 items-center gap-2 text-slate-900'><Phone color='purple' size={14}/> <a href={`tel:${contact.phone}`}>{contact.phone}</a></p>
                     </span>
                 </li> 
             ))}

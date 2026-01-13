@@ -39,8 +39,8 @@ export default function TasksComponent() {
     if(!mounted) return null;
 
     return(
-        <div className="h-auto md:h-90 overflow-y-scroll overflow-x-hidden border-2 border-slate-600 rounded-lg bg-slate-500 dark:bg-slate-300">
-            <h2 className="inline-flex items-center justify-between py-4 text-slate-300 dark:text-slate-800 uppercase tracking-wider p-2 w-full">
+        <div className="dashboard-component-outer">
+            <h2 className="dashboard-component-header">
                 <CircleCheckBig/>
                 Tasks 
             </h2>
@@ -61,7 +61,10 @@ export default function TasksComponent() {
             </div>
             <div className="flex flex-col items-start justify-start w-full px-2">
                 <button
-                    className="w-full p-2 bg-green-400/70 dark:bg-green-700 mx-2 rounded-lg inline-flex items-center justify-between cursor-pointer hover:bg-green-600"  
+                    className={`}
+                                w-full p-2 bg-slate-50 dark:bg-slate-50 mx-2 rounded-md inline-flex items-center 
+                                justify-between cursor-pointer inset-shadow-xs shadow-slate-500
+                                hover:shadow-[inset_0_0_10px_rgba(0,0,0,0.8)] text-black uppercase tracking-wider ${addingTask ? 'shadow-[inset_0_0_10px_rgba(0,0,0,0.8)]': ''}`}
                     onClick={() => setAddingTask(!addingTask)}  
                 >
                     Add new task
@@ -89,7 +92,7 @@ export default function TasksComponent() {
                     </select>
                     <button 
                         onClick={() => addTask({taskname: newTaskName, priority: newTaskPriority as 'low' | 'normal' | 'high', completed: false})}
-                        className="w-full bg-slate-300 dark:bg-slate-500 h-10 rounded-lg hover:bg-slate-200 cursor-pointer"
+                        className="w-full bg-slate-400 h-10 rounded-lg hover:bg-slate-200 cursor-pointer text-black"
                     >Add task
                     </button>
                 </span>

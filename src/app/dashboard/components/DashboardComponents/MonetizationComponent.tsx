@@ -21,8 +21,8 @@ export default function MonetizationComponent() {
     if(!mounted) return null;
 
     return(
-        <div className='flex flex-col gap-2 items-start justify-center p-2 h-90 overflow-y-scroll border-2 border-slate-600 rounded-lg bg-slate-500 dark:bg-slate-300'>
-            <h2 className='p-2 inline-flex items-center justify-between px-2 w-full text-lg uppercase tracking-wider text-slate-300 dark:text-slate-700'>
+        <div className='dashboard-component-outer'>
+            <h2 className='dashboard-component-header'>
                 <Landmark/>    
                 Revenue history
             </h2>
@@ -31,11 +31,11 @@ export default function MonetizationComponent() {
                 width={600}
                 height={260}
                 data={data}
-                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
                 >
                     <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
-                    <XAxis dataKey="name" tick={{ fontSize: 12, fill: "#555" }} />
-                    <YAxis tick={{ fontSize: 12, fill: "#555" }} />
+                    <XAxis dataKey="name" tick={{ fontSize: 18, fill: "black" }} />
+                    <YAxis tick={{ fontSize: 14, fill: "#555" }} />
                     <Tooltip
                         contentStyle={{ backgroundColor: "#fff", borderColor: "#ccc", borderRadius: 10 }}
                         labelStyle={{ color: "#000000", fontWeight: "bold" }}
@@ -48,10 +48,10 @@ export default function MonetizationComponent() {
                     <Line
                         type="monotone"
                         dataKey="revenue"
-                        stroke="#6366f1"
+                        stroke="darkorange"
                         strokeWidth={3}
-                        dot={{ r: 5, stroke: '#6366f1', strokeWidth: 2, fill: '#fff' }}
-                        activeDot={{ r: 9 }}
+                        dot={{ r: 4, stroke: 'blue', strokeWidth: 2, fill: 'blue' }}
+                        activeDot={{ r: 7 }}
                     />
                 </LineChart>
             </div>
